@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saad Mirza - Full Stack Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-500': '#667eea',
+                        'primary-600': '#764ba2',
+                        'secondary-500': '#2563eb',
+                        'accent-400': '#34d399',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'fadeIn': 'fadeIn 0.6s ease-in-out',
+                        'pulse-slow': 'pulse 3s infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        fadeIn: {
+                            from: { opacity: 0, transform: 'translateY(20px)' },
+                            to: { opacity: 1, transform: 'translateY(0)' },
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 min-h-screen font-sans text-gray-800">
+
+    <nav class="fixed top-8 left-1/2 -translate-x-1/2 z-50 animate-fadeIn">
+        <div class="glass px-6 py-3 rounded-full shadow-lg">
+            <div class="flex items-center space-x-6">
+                <a href="#home" class="text-gray-700 hover:text-primary-500 transition-colors font-medium">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-primary-500 transition-colors font-medium">About</a>
+                <a href="#projects" class="text-gray-700 hover:text-primary-500 transition-colors font-medium">Projects</a>
+                <a href="#contact" class="text-gray-700 hover:text-primary-500 transition-colors font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center justify-center px-4 py-24">
+        <div class="glass rounded-3xl p-8 md:p-12 max-w-4xl w-full shadow-2xl animate-fadeIn">
+            <div class="text-center">
+                <div class="relative mb-8">
+                    <div class="w-32 h-32 mx-auto rounded-full overflow-hidden flex items-center justify-center shadow-xl animate-float">
+                        <img src="images/mypicture.jpg" alt="A professional headshot of Saad Mirza" class="object-cover w-full h-full">
+                    </div>
+                    <div class="absolute -top-2 -right-2 w-6 h-6 bg-accent-400 rounded-full border-4 border-white animate-pulse-slow"></div>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-black gradient-text mb-4">Saad Mirza</h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-6 font-medium">Full Stack Developer</p>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-8 leading-relaxed">
+                    Passionate full stack developer specializing in Laravel and modern web technologies. I create dynamic, responsive web applications with a focus on clean code and exceptional user experiences.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#projects" class="bg-gradient-to-r from-primary-500 to-primary-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300">
+                        View My Work
+                    </a>
+                    <a href="#contact" class="border-2 border-primary-500 text-primary-500 px-8 py-4 rounded-full font-semibold hover:bg-primary-500 hover:text-white transition-all duration-300">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold gradient-text text-center mb-16">About Me</h2>
+            <p>I'm a full stack developer with a passion for crafting clean, efficient, and user-focused web applications. With Laravel powering my backend and Tailwind CSS shaping my frontend, I love building tools that are both functional and beautiful</p>
+            <div class="glass rounded-3xl p-8 md:p-12 mb-12 shadow-xl">
+                <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">Technologies I Work With</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="group p-6 bg-white/50 rounded-2xl hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mb-4 mx-auto group-hover:scale-110 transition-transform">L</div>
+                        <h4 class="font-semibold text-gray-800 text-center mb-2">Laravel</h4>
+                        <p class="text-gray-600 text-sm text-center">PHP Framework for robust backend solutions</p>
+                    </div>
+                    <div class="group p-6 bg-white/50 rounded-2xl hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mb-4 mx-auto group-hover:scale-110 transition-transform">T</div>
+                        <h4 class="font-semibold text-gray-800 text-center mb-2">Tailwind CSS</h4>
+                        <p class="text-gray-600 text-sm text-center">Utility-first CSS framework for modern design</p>
+                    </div>
+                    <div class="group p-6 bg-white/50 rounded-2xl hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-2xl flex items-center justify-center text-white text-xl font-bold mb-4 mx-auto group-hover:scale-110 transition-transform">JS</div>
+                        <h4 class="font-semibold text-gray-800 text-center mb-2">JavaScript</h4>
+                        <p class="text-gray-600 text-sm text-center">Dynamic frontend interactions and functionality</p>
+                    </div>
+                    <div class="group p-6 bg-white/50 rounded-2xl hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mb-4 mx-auto group-hover:scale-110 transition-transform">M</div>
+                        <h4 class="font-semibold text-gray-800 text-center mb-2">MySQL</h4>
+                        <p class="text-gray-600 text-sm text-center">Reliable database management and optimization</p>
+                    </div>
+                    <div class="group p-6 bg-white/50 rounded-2xl hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="w-16 h-16 bg-gradient-to-br from-sky-500 to-cyan-500 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mb-4 mx-auto group-hover:scale-110 transition-transform">R</div>
+                        <h4 class="font-semibold text-gray-800 text-center mb-2">React Basics</h4>
+                        <p class="text-gray-600 text-sm text-center">Foundational knowledge for component-based UI</p>
+                    </div>
+                    <div class="group p-6 bg-white/50 rounded-2xl hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="w-16 h-16 bg-gradient-to-br from-lime-500 to-emerald-500 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mb-4 mx-auto group-hover:scale-110 transition-transform">N</div>
+                        <h4 class="font-semibold text-gray-800 text-center mb-2">Node.js Basics</h4>
+                        <p class="text-gray-600 text-sm text-center">Server-side runtime environment</p>
+                    </div>
+                    <div class="group p-6 bg-white/50 rounded-2xl hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="w-16 h-16 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mb-4 mx-auto group-hover:scale-110 transition-transform">Git</div>
+                        <h4 class="font-semibold text-gray-800 text-center mb-2">Git & GitHub</h4>
+                        <p class="text-gray-600 text-sm text-center">Version control and team collaboration</p>
+                    </div>
+                </div>
+            </div>
+            <div class="glass rounded-3xl p-8 md:p-12 shadow-xl">
+                <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">What I Bring</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="flex items-start space-x-4 p-4 rounded-xl hover:bg-white/50 transition-colors">
+                        <div class="w-8 h-8 bg-indigo-500 rounded-lg flex-shrink-0 flex items-center justify-center text-white font-bold">✓</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-1">Problem Solving</h4>
+                            <p class="text-gray-600 text-sm">Strong analytical skills and attention to detail</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4 p-4 rounded-xl hover:bg-white/50 transition-colors">
+                        <div class="w-8 h-8 bg-indigo-500 rounded-lg flex-shrink-0 flex items-center justify-center text-white font-bold">✓</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-1">Full Stack Skills</h4>
+                            <p class="text-gray-600 text-sm">Frontend and backend development expertise</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4 p-4 rounded-xl hover:bg-white/50 transition-colors">
+                        <div class="w-8 h-8 bg-indigo-500 rounded-lg flex-shrink-0 flex items-center justify-center text-white font-bold">✓</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-1">Clean Code</h4>
+                            <p class="text-gray-600 text-sm">Writing maintainable and scalable solutions</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4 p-4 rounded-xl hover:bg-white/50 transition-colors">
+                        <div class="w-8 h-8 bg-indigo-500 rounded-lg flex-shrink-0 flex items-center justify-center text-white font-bold">✓</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-1">Version Control</h4>
+                            <p class="text-gray-600 text-sm">Proficient with Git & collaborative workflows on GitHub</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold gradient-text text-center mb-16">My Projects</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                <div class="glass rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="relative mb-6">
+                        <div class="w-full h-48 bg-gray-50 rounded-2xl flex items-center justify-center overflow-hidden">
+                            <img src="images/Drum.png" alt="Play Drum Project" class="object-cover w-full h-full">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Play Drum</h3>
+                    <p class="text-gray-600 mb-4">An interactive web app that lets you make drum sounds by pressing keys on your keyboard.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full">HTML</span>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">CSS</span>
+                        <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full">JavaScript</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="https://saad-developer-coder.github.io/Drum/" class="flex-1 bg-primary-500 text-white text-center py-2 rounded-lg hover:bg-primary-600 transition-colors font-medium">Live Demo</a>
+                        <a href="https://github.com/Saad-developer-coder/Drum.git" class="flex-1 border border-primary-500 text-primary-500 text-center py-2 rounded-lg hover:bg-primary-500 hover:text-white transition-all font-medium">Source Code</a>
+                    </div>
+                </div>
+
+                <div class="glass rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="relative mb-6">
+                        <div class="w-full h-48 bg-gray-50 rounded-2xl flex items-center justify-center overflow-hidden">
+                            <img src="images/Dice.PNG" alt="Dice Challenge Project" class="object-cover w-full h-full">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Dice Challenge</h3>
+                    <p class="text-gray-600 mb-4">A simple, interactive game where two players roll a pair of dice to see who wins.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full">HTML</span>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">CSS</span>
+                        <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full">JavaScript</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="https://saad-developer-coder.github.io/Dice-Challenge/" class="flex-1 bg-primary-500 text-white text-center py-2 rounded-lg hover:bg-primary-600 transition-colors font-medium">Live Demo</a>
+                        <a href="https://github.com/Saad-developer-coder/Dice-Challenge.git" class="flex-1 border border-primary-500 text-primary-500 text-center py-2 rounded-lg hover:bg-primary-500 hover:text-white transition-all font-medium">Source Code</a>
+                    </div>
+                </div>
+
+                <div class="glass rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="relative mb-6">
+                        <div class="w-full h-48 bg-gray-50 rounded-2xl flex items-center justify-center overflow-hidden">
+                            <img src="images/Todo-app.PNG" alt="Todo App Project" class="object-cover w-full h-full">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Todo App</h3>
+                    <p class="text-gray-600 mb-4">A note-taking application for managing your daily tasks, allowing you to easily add and delete notes.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                       
+                      
+                        <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full">React</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="https://todo-app-nine-black-35.vercel.app/" class="flex-1 bg-primary-500 text-white text-center py-2 rounded-lg hover:bg-primary-600 transition-colors font-medium">Live Demo</a>
+                        <a href="https://github.com/Saad-developer-coder/Todo-app.git" class="flex-1 border border-primary-500 text-primary-500 text-center py-2 rounded-lg hover:bg-primary-500 hover:text-white transition-all font-medium">Source Code</a>
+                    </div>
+                </div>
+
+                <div class="glass rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="relative mb-6">
+                        <div class="w-full h-48 bg-gray-50 rounded-2xl flex items-center justify-center overflow-hidden">
+                            <div class="text-indigo-400 text-6xl">
+                                <img src="images/booklibrary.png" alt="booklibrary" class="object-cover w-full h-full"> 
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Book Library</h3>
+                    <p class="text-gray-600 mb-4">A sleek and functional web application built with Laravel that allows users to manage a personal book collection. The app features user authentication, book categorization, and CRUD operations for adding, editing, and deleting books. Tailwind CSS ensures a clean, responsive design, 
+                        while Laravel handles the backend logic and database interactions.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full">Laravel</span>
+                      
+                        <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full">Tailwind</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/Saad-developer-coder/Book-Library-main.git" class="flex-1 bg-primary-500 text-white text-center py-2 rounded-lg hover:bg-primary-600 transition-colors font-medium">Source Code</a>
+                       
+                    </div>
+                </div>
+
+                <div class="glass rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="relative mb-6">
+                        <div class="w-full h-48 bg-gray-50 rounded-2xl flex items-center justify-center overflow-hidden">
+                            <div class="text-indigo-400 text-6xl">
+                                <img src="images/job-board.png" alt="booklibrary" class="object-cover w-full h-full"> 
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Job-Board</h3>
+                    <p class="text-gray-600 mb-4"><p>A simple yet functional blogging platform built with Laravel, allowing users to create blog posts and share their thoughts through comments. Designed as a clean content board, it supports basic CRUD operations for posts and a comment feature to encourage interaction.
+                         Ideal for learning Laravel fundamentals and building a lightweight content-sharing app.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full">Laravel</span>
+                      
+                        <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full">Tailwind</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/Saad-developer-coder/JOB-BOARD.git" class="flex-1 bg-primary-500 text-white text-center py-2 rounded-lg hover:bg-primary-600 transition-colors font-medium">Source Code</a>
+                       
+                    </div>
+                </div>
+            </div>
+
+            
+            
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold gradient-text text-center mb-16">Get In Touch</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="glass rounded-3xl p-8 shadow-xl">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Send Me a Message</h3>
+
+                    <form action="https://getform.io/f/byvekdza" method="POST" class="space-y-6">
+
+  <input type="hidden" name="_gotcha" style="display:none !important">
+
+  <!-- Optional redirect after submission -->
+  <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you.html">
+
+  <div>
+    <label class="block text-gray-700 font-medium mb-2">Name</label>
+    <input type="text" name="name" required
+      class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:border-primary-500 focus:outline-none transition-colors"
+      placeholder="Your Name">
+  </div>
+
+  <div>
+    <label class="block text-gray-700 font-medium mb-2">Email</label>
+    <input type="email" name="email" required
+      class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:border-primary-500 focus:outline-none transition-colors"
+      placeholder="your.email@example.com">
+  </div>
+
+  <div>
+    <label class="block text-gray-700 font-medium mb-2">Subject</label>
+    <input type="text" name="_subject"
+      class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:border-primary-500 focus:outline-none transition-colors"
+      placeholder="Project Inquiry">
+  </div>
+
+  <div>
+    <label class="block text-gray-700 font-medium mb-2">Message</label>
+    <textarea rows="5" name="message" required
+      class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:border-primary-500 focus:outline-none transition-colors"
+      placeholder="Tell me about your project..."></textarea>
+  </div>
+
+  <button type="submit"
+    class="w-full bg-gradient-to-r from-primary-500 to-primary-600 text-white py-3 rounded-xl font-semibold hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
+    Send Message
+  </button>
+</form>
+
+                </div>
+                <div class="space-y-8">
+                    <div class="glass rounded-3xl p-8 shadow-xl">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Let's Connect</h3>
+                        <p class="text-gray-600 mb-6">Ready to bring fresh perspectives and dedication to your development team. I'm always excited to discuss new opportunities and projects.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4 p-4 bg-white/50 rounded-xl">
+                                <div class="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center text-white text-xl">✉</div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Email</h4>
+                                    <p class="text-gray-600">saadshivan62@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4 p-4 bg-white/50 rounded-xl">
+                                <div class="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center text-white text-xl">📱</div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Phone</h4>
+                                    <p class="text-gray-600">+13 6 3566 9283</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4 p-4 bg-white/50 rounded-xl">
+                                <div class="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center text-white text-xl">📍</div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Location</h4>
+                                    <p class="text-gray-600">Hoogsraat 8, 3956NB ,Leersum ,Utrecht</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass rounded-3xl p-8 shadow-xl">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Find Me on GitHub</h3>
+                        <div class="flex justify-center space-x-4">
+                            <a href="https://github.com/Saad-developer-coder" class="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center text-white hover:bg-gray-900 hover:scale-110 transition-all duration-300">
+                                <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.809 1.305 3.493.998.108-.778.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.008-.404 1.025.005 2.051.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-8 px-4 text-center">
+            <div class="glass rounded-2xl p-6 max-w-2xl mx-auto">
+                <p class="text-gray-600 mb-2">© 2024 Saad Mirza. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="js/main.js"></script>
+
+    </body>
+    </html>
